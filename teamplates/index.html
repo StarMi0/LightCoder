@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+		<a class="navbar-brand"><img src="{% static '\images\Logo_to_site.jpg' %}" ></a>
+      <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacts.html">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about_us.html" tabindex="-1" aria-disabled="true">О нас</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Поиск</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="simple-carousel">
+      <a href="#" class="control_next"><i class="fa fa-chevron-right"></i></a>
+      <a href="#" class="control_prev"><i class="fa fa-chevron-left"></i></a>
+      <ul>
+        <li class="slide" style="background-image: url('https://prestigecomputer.ru/upload/iblock/0b2/0b234513c965843b9a6558a77180e8f3.jpg');"></li>
+        <li class="slide" style="background-image: url('https://www.luxresearchinc.com/hubfs/New%20LR.com%20Website%20-%20April%202019/Website%20-%20Press%20Release%20Featured%20Images/Lux%20Research%20-%20Blockchain%20Bitcoin%20Cryptocurrency.jpg');"></li>
+        <li class="slide" style="background-image: url('https://hi-techweek.ru/common/img/uploaded/exhibitions/sviaz_expocomm/img_2020/gartner_1405_05.jpg');"></li>
+        <li class="slide" style="background-image: url('https://academy.promo/uploads/timg-2-2.jpg');"></li>
+      </ul>
+    </div>
+    
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+	<script src="script.js"></script>
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+         <img src="{% static '\images\Vorobyev_Artem.jpg' %}" width="140"heigth="140" class="img-circle">
+        
+
+        <h2>Воробьёв Артём Владимирович</h2>
+        <p>Талантливый разработчик в области бэкэнда(Django) и языка Python.</p>
+        <p><a class="btn btn-secondary" href="#">Выбрать исполнителя &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      
+       <div class="col-lg-4">
+       
+        <img src="{% static '\images\Slavik_Tumin.jpg' %}" width="140"heigth="140" class="img-circle">
+
+        <h2>Тюмин Вячеслав Валерьевич</h2>
+        <p>Виртуоз фронтэнда, мобильной разработки, полиглот ЯП.</p>
+        <p><a class="btn btn-secondary" href="#">Выбрать исполнителя &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      
+       <div class="col-lg-4">
+       
+       
+        <img src="{% static '\images\Nowik_Zahar.jpg' %}" width="140"heigth="140" class="img-circle">
+
+        <h2>Новик Захар Александрович</h2>
+        <p>Фронтэнд, бэкэнд, мобильная разработка </p>
+        <p><a class="btn btn-secondary" href="#">Выбрать исполнителя &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Красивые и современные сайты? Это точно к Нам.
+        <span class="text-muted">Рады и обязаны помочь Вам.</span></h2>
+        <p class="lead">Команда отличных разработчиков к Вашим услугам.</p>
+      </div>
+      <div class="col-md-4">
+        <svg id="photo_project"class="bd-placeholder-img bd-placeholder-img-lg"><img src="{% static '\images\site_variable.jpg' %}"width="500" heigth="500"></svg>
+        </div>
+      </div>
+   
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 div class="featurette-heading">Мобильная разработка. <br> По вашим вкусам и правилам.</h2>
+        <p div class="lead">Хотите качественное, производительное, оригинальное и быстрое мобильное приложение? Тогда Вы попали по адресу.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <div id="photo_project" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"><img src="{% static '\images\MobApp.jpg' %}"width="500"heigth="500" ></div>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">И главное. <span class="text-muted">Время.</span></h2>
+        <p class="lead">Мы ценим Ваше и Свое время...и не тратим его попусту.</p>
+      </div>
+      <div class="col-md-5">
+        <div id="photo_project" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500"><img src="{% static '\images\o_clock.jpg' %}"/></div>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+{% endblock %}
+
+
